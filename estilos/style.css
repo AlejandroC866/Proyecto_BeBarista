@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --background-color--: #F0ECE3;
+    --text-color--:#686e68;
+}
+
+body{
+    background-color: var(--background-color--);
+    font-family: 'Bebas Neue', verdana;
+    color: var(--text-color--);
+    
+}
+
+/* Barra de navegacion */
+
+header{
+    height: 30px;
+    margin-top: 0;
+    padding: 30px;
+    
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+}
+.menu li{
+    padding: 15px 15px;
+    text-transform: uppercase;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: var(--text-color--);
+    font-weight: bold;
+    transition: 0.5s;
+    padding: 15px;
+    border-radius: 3px;
+
+}
+
+.menu li a:hover{
+    background-color: #A0A0A0;
+}
+
+.foto__cafe{
+    width: 200px;
+    height: 200px;
+}
+
+/* Texto*/
+
+.presentacion{
+    text-align: center;
+}
+.presentacion h2{
+    text-transform: uppercase;
+}
+
+.pruebagrid{
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header barra barra "
+    "articulo articulo articulo"
+    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15%, 70%, 15%;
+    grid-gap: 15px;
+    
+}
+
+.barra{
+   
+    grid-area: barra;
+    display: flex;
+    justify-content: end;
+   
+}
+.presentacion{
+   
+    grid-area: articulo;
+}
+.footer{
+    display: flex;
+    justify-content: end;
+    grid-area: footer;
+    margin-bottom: 0;
+    height: 30px;
+}
+ .header{
+       
+     grid-area: header;
+     
+ }
+
+@media (max-width:768px){
+    .pruebagrid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10%, 10%, 70%, 10%;
+        grid-template-areas: 
+        "header header"
+        "barra  barra"
+        "articulo articulo"
+        "footer footer";
+    }
+    
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .barra{
+        justify-content: center;
+    }
+    .video{
+        width: auto;
+        height: 200px;
+    }
+}
+
+@media (max-width:480px){
+    .pruebagrid{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 10%, 10%, 70%, 10%;
+        
+        grid-template-areas: 
+        "header header"
+        "barra barra"
+        "articulo articulo"
+        "footer footer";
+    }
+   
+    .menu li{
+        padding: 1px;
+         
+    }
+    .video{
+        width: auto;
+        height: 200px;
+    }
+}
+
