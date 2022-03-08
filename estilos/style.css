@@ -105,8 +105,16 @@ header{
 
 /* Texto*/
 
-.titulo_maquina{
-    font-size: 15px;
+.titulo_cafe{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.titulo__maquina{
+    font-size: 20px;
+    text-transform: uppercase;
+    
     font-family: 'Bebas Neue', verdana;
 
 }
@@ -117,6 +125,11 @@ header{
 
     text-align: center;
 }
+.text_contactanos{
+    text-align: center;
+    font-size: 30px;
+}
+
 .presentacion h2{
     text-transform: uppercase;
 }
@@ -170,7 +183,25 @@ header{
 
  }
 
-@media (max-width:768px){
+ .boton_contacto{
+     background-color: #686e68;
+     border-radius: 2px #686e68 ;
+     color: white;
+ }
+ .boton_contacto:hover{
+     background-color: rgb(59, 59, 59);
+     color: white;
+ }
+
+ .contacto_text{
+     text-decoration: none;
+     color: white;
+ }
+
+ 
+
+
+/*@media (max-width:768px){
     .pruebagrid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 10%, 10%, 70%, 10%;
@@ -198,9 +229,9 @@ header{
         width: auto;
         height: 200px;
     }
-}
+}*/
 
-@media (max-width:480px){
+/*@media (max-width:480px){
     .pruebagrid{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 10%, 10%, 70%, 10%;
@@ -220,5 +251,5 @@ header{
         width: auto;
         height: 200px;
     }
-}
+}*/
 
