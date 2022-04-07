@@ -61,6 +61,11 @@ header {
     padding: 15px 15px;
     text-transform: uppercase;
 }*/
+
+/* carrousel*/
+.h-100{
+  height: 500px !important;
+}
 .navbar-ul .nav-item .tamano-fuente {
   color: var(--text-color--);
   font-weight: bold;
@@ -76,6 +81,14 @@ header {
   height: 200px; }
 
 /* Texto*/
+
+.card-title{
+  font-weight: bold;
+}
+.texto-sitio{
+  font-size: 30px;
+  font-weight: bold;
+}
 .titulo_cafe {
   font-size: 18px;
   text-transform: uppercase;
@@ -93,7 +106,7 @@ header {
 
 .text_contactanos {
   text-align: center;
-  font-size: 30px; }
+  font-size: 25px; }
 
 .presentacion h2 {
   text-transform: uppercase; }
@@ -101,7 +114,9 @@ header {
 .pruebagrid {
   min-height: 100vh;
   display: grid;
-  grid-template-areas: "header barra barra " "articulo articulo articulo" "footer footer footer";
+  grid-template-areas: "header barra barra "
+ "articulo articulo articulo"
+ "footer footer footer";
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 15%, 70%, 15%;
   grid-gap: 15px; }
