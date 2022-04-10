@@ -82,6 +82,11 @@ header {
 
 /* Texto*/
 
+.sub_cafe{
+  text-align: center;
+  font-weight: bold;
+}
+
 .card-title{
   font-weight: bold;
 }
@@ -159,6 +164,8 @@ header {
 .contacto_text {
   text-decoration: none;
   color: white; }
+
+
 
 /*@media (max-width:768px){
     .pruebagrid{
