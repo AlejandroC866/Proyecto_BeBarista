@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -15,14 +15,14 @@
 
 <body>
     <header>
-        <nav class=" nav-background navbar navbar-expand-lg navbar-light  ">
-            <div class="container-fluid">
+        <nav class=" nav-background navbar navbar-expand-lg navbar-light   ">
+            <div class="container-fluid ">
                 <h1 class=" logo" >Inicio</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="new--bar collapse navbar-collapse" id="navbarNav">
+                <div class="new--bar collapse navbar-collapse navbar-darks menu_color" id="navbarNav">
                     <ul class="navbar-ul navbar-nav">
                         <li class="nav-item">
                             <a class="tamano-fuente nav-link  aria-current="page" href="index.html">Inicio</a>
@@ -36,19 +36,22 @@
                         <li class="nav-item">
                             <a class="tamano-fuente nav-link" href="secciones/contacto.html">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="tamano-fuente nav-link" href="secciones/cursos.html">Cursos</a>
+                      </li>
 
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <br>
-    <br>
-
-    <div class="presentacion">
+    
+    <main>
+      <div class="inicio__container">
+        
         <h2>Be barista</h2>
-        <br>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  
+        <div id="carouselExampleControls" class="carousel slide carro_z" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="imagenes/banner2.jpg" class="d-block h-100 w-100" alt="...">
@@ -68,50 +71,50 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
-        <br>
-
-        <p class="texto-sitio">Aprende a ser un barista profesional aqui</p>
-        <br>
-        <p class="text_contactanos">Contactanos para asesoramiento presenciales</p>
-        <br>
+        </div>
         
-        <a href="secciones/contacto.html" class="btn  btn-lg active boton_contacto" role="button">Contactanos</a>
-          <br>
-          <br>
-          <br>
-          <br>
-
-          <div class="card-group">
-            <div class="card">
-              <img src="imagenes/latteart.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Aprende LatteArt</h5>
-                <p class="card-text">Te enseñaremos las mejores tecnicas para que aprendas o mejores tus habilidades en el latteart.</p>
+        <div class="inicio__container--cursos">
+          
+          <p class="texto-sitio">Aprende a ser un barista profesional aqui</p>
+    
+          <p class="text_contactanos">Contactanos para asesoramiento presenciales</p>
+  
+            <div class="card-group">
+              <div class="card">
+                <img src="imagenes/latteart.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aprende LatteArt</h5>
+                  <p class="card-text">Te enseñaremos las mejores tecnicas para que aprendas o mejores tus habilidades en el latteart.</p>
+                </div>
+                
               </div>
-              
-            </div>
-            <div class="card">
-              <img src="imagenes/todosobre.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Todo sobre el Cafe</h5>
-                <p class="card-text">Aprenderas todo sobre el café, sus origenes, varietales y propiedades de cada uno de ellos.</p>
+              <div class="card">
+                <img src="imagenes/todosobre.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Todo sobre el Cafe</h5>
+                  <p class="card-text">Aprenderas todo sobre el café, sus origenes, varietales y propiedades de cada uno de ellos.</p>
+                </div>
+                
               </div>
-              
-            </div>
-            <div class="card">
-              <img src="imagenes/bebidas.jpg" class="card-img-top" alt="bebidas">
-              <div class="card-body">
-                <h5 class="card-title">Aprende sobre bebidas a base de Espresso</h5>
-                <p class="card-text">Si bien hay una gran cantidad de bebidas, te enseñaremos a preparar las mas servidas en las cafeterias.</p>
+              <div class="card">
+                <img src="imagenes/bebidas.jpg" class="card-img-top" alt="bebidas">
+                <div class="card-body">
+                  <h5 class="card-title">Aprende sobre bebidas a base de Espresso</h5>
+                  <p class="card-text">Si bien hay una gran cantidad de bebidas, te enseñaremos a preparar las mas servidas en las cafeterias.</p>
+                </div>
+                
               </div>
-              
             </div>
-          </div>
+            <div class="inicio__container--boton">
+              <a href="secciones/contacto.html" class="btn  btn-lg active boton_contacto" role="button">Contactanos</a>
+            </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer">
         <p>Copyright Be Barista 2022. Todos los derechos reservados.</p>
     </footer>
-    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
